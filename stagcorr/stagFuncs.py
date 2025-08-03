@@ -1,9 +1,33 @@
+"""Staggered fermion phase functions and operator utilities.
+
+This module implements the staggered fermion formalism including phase functions,
+operator mappings, and momentum characters for lattice QCD calculations.
+Follows the TXYZ coordinate convention.
+"""
+
 import sympy as sp
 import numpy as np
 ########################################################################################################################################
 #### Staggered Phase functions with convention txyz
 
 def bar(gamma_vec, mod = True):
+    """Compute the bar operation for staggered phases.
+    
+    For each component i, sums all other components j≠i.
+    Used in staggered fermion phase calculations.
+    
+    Parameters
+    ----------
+    gamma_vec : array_like
+        Input gamma vector (typically coordinate or momentum)
+    mod : bool, default=True
+        Apply modulo 2 operation to result
+        
+    Returns
+    -------
+    numpy.ndarray
+        Bar operation result: bar_i = sum_{j≠i} gamma_j
+    """
     new_gamma_vec = np.zeros((len(gamma_vec)), dtype = type(gamma_vec[0]))
     for i, val1 in enumerate(gamma_vec):
         for j, val2 in enumerate(gamma_vec):
@@ -17,6 +41,23 @@ def bar(gamma_vec, mod = True):
 
 
 def less_than(gamma_vec, mod = True):
+    """Compute the less-than operation for staggered phases.
+    
+    For each component i, sums all components j<i.
+    Essential for eta phase calculations in staggered fermions.
+    
+    Parameters
+    ----------
+    gamma_vec : array_like
+        Input gamma vector (typically coordinate or momentum)
+    mod : bool, default=True
+        Apply modulo 2 operation to result
+        
+    Returns
+    -------
+    numpy.ndarray
+        Less-than operation result: lt_i = sum_{j<i} gamma_j
+    """
     new_gamma_vec = np.zeros((len(gamma_vec)), dtype = type(gamma_vec[0]))
     for i, val1 in enumerate(gamma_vec):
         for j, val2 in enumerate(gamma_vec):
@@ -46,6 +87,21 @@ def epsilon_phase(n_vec):
     return np.power(-1, exponent)
 
 def eta_phase(n_vec):
+    """Compute the eta phase factor for staggered fermions.
+    
+    Calculates (-1)^(less_than operation), fundamental to
+    staggered fermion Dirac operator construction.
+    
+    Parameters
+    ----------
+    n_vec : array_like
+        Coordinate vector [t, x, y, z]
+        
+    Returns
+    -------
+    numpy.ndarray
+        Phase factors: (-1)^(less_than(n_vec))
+    """
     exponent =  less_than(n_vec)
     
     return np.power(-1, exponent)
@@ -104,6 +160,23 @@ def sympy_mod(expression):
     return new_expression
 
 def add(gamma_vec1, gamma_vec2):
+    """Add two gamma vectors with modulo 2 arithmetic.
+    
+    Parameters
+    ----------
+    gamma_vec1, gamma_vec2 : array_like
+        Input gamma vectors to add
+        
+    Returns
+    -------
+    numpy.ndarray
+        Sum of vectors with mod 2 applied to each component
+        
+    Notes
+    -----
+    Used for staggered fermion phase calculations where
+    operations are performed in Z_2 arithmetic.
+    """
     gamma_new = np.add(gamma_vec1, gamma_vec2)
     gamma_new = np.mod(gamma_new, 2)
     return gamma_new
@@ -114,6 +187,30 @@ def add(gamma_vec1, gamma_vec2):
 
 
 def phase_shift_operator(spin, taste):
+    """Convert gamma operators to staggered phase and shift.
+    
+    Transforms continuum Dirac gamma matrices (spin ⊗ taste) into
+    staggered fermion phase factors and coordinate shifts.
+    
+    Parameters
+    ----------
+    spin : str
+        Spin Dirac structure ('G1', 'G5', 'GX', 'GY', 'GZ', 'GT', etc.)
+    taste : str
+        Taste structure ('G1', 'G5', 'GX', 'GY', 'GZ', 'GT', etc.)
+        
+    Returns
+    -------
+    tuple
+        (phase_expression, shift_vector)
+        - phase_expression: SymPy expression for staggered phase
+        - shift_vector: numpy array of coordinate shifts [t,x,y,z]
+        
+    Notes
+    -----
+    Uses TXYZ convention [x_0, x_1, x_2, x_3] = [t, x, y, z].
+    Based on Follana HISQ paper appendix formulation.
+    """
     ### convention = [x_0, x_1, x_2, x_3]
     ### See Follana HISQ paper appendix
     
@@ -134,10 +231,10 @@ def phase_shift_operator(spin, taste):
     "GXT": [[1,1,0,0],-1],
     "GYT": [[1,0,1,0],-1],
     "GZT": [[1,0,0,1],-1],
-    "G5X": [[1,0,1,1],1],
-    "G5Y": [[1,1,0,1],-1],
-    "G5Z": [[1,1,1,0],1],
-    "G5T": [[0,1,1,1],-1]}
+    "G5X": [[1,0,1,1],-1],
+    "G5Y": [[1,1,0,1],1],
+    "G5Z": [[1,1,1,0],-1],
+    "G5T": [[0,1,1,1],1]}
     
     
     m, sign_m = gamma_dict[spin]

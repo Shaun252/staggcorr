@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stagcorr"
+version = "0.1.0"
+description = "Staggered fermion correlation function solver for lattice QCD"
+authors = [{name = "Shaun Lahert", email = "shaun.lahert@gmail.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "sympy>=1.8.0"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/shaun252/stagcorr"
+Repository = "https://github.com/shaun252/stagcorr"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:Signature.*does not match any known type:UserWarning:numpy._core.getlimits"
+]

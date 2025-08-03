@@ -1,3 +1,9 @@
+"""HISQ smearing implementation for improved staggered quarks.
+
+This module implements the Highly Improved Staggered Quark (HISQ) action
+smearing procedures for gauge field improvement in lattice QCD.
+"""
+
 from stagcorr.gauge.gaugeIO import *
 import time
 from math import sqrt, factorial
@@ -21,7 +27,27 @@ class U:
     
 
 def second_deriv(Umu, direction):
-
+    """Compute second derivative operator for HISQ smearing.
+    
+    Constructs the second derivative operator used in HISQ gauge
+    field smearing to suppress short-distance fluctuations.
+    
+    Parameters
+    ----------
+    Umu : U object
+        Gauge link variable U_μ(n)
+    direction : int
+        Direction for second derivative (0=t, 1=x, 2=y, 3=z)
+        
+    Returns
+    -------
+    sympy expression
+        Second derivative operator expression
+        
+    Notes
+    -----
+    Part of the HISQ smearing algorithm for improved gauge actions.
+    """
     n = Umu.position
     mu = Umu.direction
     

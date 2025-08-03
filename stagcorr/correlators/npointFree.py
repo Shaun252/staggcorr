@@ -1,3 +1,10 @@
+"""Free field n-point correlation function calculations.
+
+This module handles the computation of correlation functions for free staggered 
+fermions, routing to appropriate 2-point, 3-point, or 4-point calculations
+based on the number of operators specified.
+"""
+
 import stagcorr.stagFuncs as opT
 from stagcorr.propagatorUtils.propcoreFree import propagator
 from stagcorr.correlators.twoPointsFree import tieup2pt_fullProp
@@ -5,6 +12,46 @@ from stagcorr.correlators.threePointsFree import tieup3pt_fullProp
 from stagcorr.correlators.fourPointsFree import tieup4pt_fullProp
 
 def npt(spinTasteMassNaikMomSymShift1, prop1 =None, volume=(4,4,4,4), spinTasteMassNaikMomSymShift2=None, prop2 =None, spinTasteMassNaikMomSymShift3=None, prop3 =None, spinTasteMassNaikMomSymShift4 = None, prop4 =None, antiperiodic=True, gField = None):
+    """Compute n-point correlation functions for free staggered fermions.
+    
+    Internal routing function that determines whether to compute 2-point, 3-point,
+    or 4-point correlation functions based on provided operator specifications.
+    Handles propagator generation and operator phase calculations.
+    
+    Parameters
+    ----------
+    spinTasteMassNaikMomSymShift1 : list
+        First operator: [spin, taste, mass, naik_eps, momentum, sym_shift]
+    prop1 : numpy.ndarray, optional
+        Pre-computed propagator for operator 1
+    volume : tuple, default=(4,4,4,4)
+        Lattice dimensions (T, X, Y, Z)
+    spinTasteMassNaikMomSymShift2 : list, optional
+        Second operator specification
+    prop2 : numpy.ndarray, optional
+        Pre-computed propagator for operator 2
+    spinTasteMassNaikMomSymShift3 : list, optional
+        Third operator specification  
+    prop3 : numpy.ndarray, optional
+        Pre-computed propagator for operator 3
+    spinTasteMassNaikMomSymShift4 : list, optional
+        Fourth operator specification
+    prop4 : numpy.ndarray, optional
+        Pre-computed propagator for operator 4
+    antiperiodic : bool, default=True
+        Use antiperiodic boundary conditions in time
+    gField : unused
+        Gauge field parameter (unused in free field theory)
+        
+    Returns
+    -------
+    numpy.ndarray
+        Correlation function tensor with appropriate dimensions for n-point function
+        
+    Notes
+    -----
+    This is an internal function typically called via generate_npt() interface.
+    """
     
     phase1, shift1 = opT.phase_shift_operator(spin=spinTasteMassNaikMomSymShift1[0], taste=spinTasteMassNaikMomSymShift1[1])
     if type(prop1) == type(None):

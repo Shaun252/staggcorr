@@ -1,3 +1,9 @@
+"""Staggered Dirac operator construction for free field theory.
+
+This module constructs the staggered fermion Dirac operator matrix
+for free field lattice QCD calculations with optional Naik improvement.
+"""
+
 import numpy as np
 import stagcorr.lattice.navigation as lattice
 import stagcorr.stagFuncs as opT
@@ -6,6 +12,34 @@ from stagcorr.propagatorUtils.nnLists import generateAntiPeriodicNearestNeighbou
 #### Generating the Staggered Operator
 
 def staggered_operator(vol, mass, gField=None, naikeps=0, antiperiodic=True):
+    """Construct the staggered fermion Dirac operator matrix.
+    
+    Builds the full lattice Dirac operator for staggered fermions including
+    nearest-neighbor hopping, mass term, and optional Naik improvement.
+    
+    Parameters
+    ----------
+    vol : tuple
+        Lattice dimensions (T, X, Y, Z)
+    mass : float
+        Bare quark mass in lattice units
+    gField : array_like, optional
+        Gauge field configuration. If None, uses free field (U=1)
+    naikeps : float, default=0
+        Naik improvement parameter epsilon
+    antiperiodic : bool, default=True
+        Use antiperiodic boundary conditions in time
+        
+    Returns
+    -------
+    numpy.ndarray
+        Staggered Dirac operator matrix of shape (V, V) where V = prod(vol)
+        
+    Notes
+    -----
+    Operator form: D = m*I + (1/2)*sum_mu eta_mu(n) [U_mu(n)*delta_{n,m-mu} - U_mu^†(n-mu)*delta_{n,m+mu}]
+    With Naik improvement: additional 3-hop terms with coefficient naikeps
+    """
     ### Operator Params
     
     matrix_dim = np.prod(vol)

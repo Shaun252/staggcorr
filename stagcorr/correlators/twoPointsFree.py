@@ -1,3 +1,9 @@
+"""Two-point correlation function calculations for free staggered fermions.
+
+This module implements the core Wick contraction algorithms for computing
+2-point correlation functions from staggered fermion propagators.
+"""
+
 from stagcorr.stagFuncs import *
 from stagcorr.lattice.navigation import *
 from stagcorr.correlators.symmetricLinks import LinkSymList
@@ -9,6 +15,40 @@ from collections import defaultdict
 
 
 def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, sym1, sym2, vol, SUN = 3):
+    """Compute 2-point correlation function from propagators.
+    
+    Performs Wick contraction to compute 2-point correlation function
+    C(t2,t1) = <O2(t2) O1(t1)> using pre-computed propagators.
+    
+    Parameters
+    ----------
+    prop1, prop2 : numpy.ndarray
+        Fermion propagators for operators 1 and 2
+    mom1, mom2 : list
+        3-momentum vectors [px, py, pz] for operators 1 and 2
+    phase1, phase2 : sympy expression
+        Staggered phase expressions for operators 1 and 2
+    shift1, shift2 : numpy.ndarray
+        Coordinate shifts for operators 1 and 2
+    sym1, sym2 : int
+        Symmetric shift parameters for operators 1 and 2
+    vol : tuple
+        Lattice dimensions (T, X, Y, Z)
+    SUN : int, default=3
+        SU(N) color group dimension (typically 3 for QCD)
+        
+    Returns
+    -------
+    numpy.ndarray
+        2-point correlation function matrix of shape (nt, nt)
+        where C[t2, t1] = <O2(t2) O1(t1)>
+        
+    Notes
+    -----
+    - Implements full Wick contraction with momentum projection
+    - Applies staggered fermion phases and coordinate shifts
+    - Uses MILC normalization conventions
+    """
     ##Assuming all spatial dimensions are equal
 
     N=vol[-1]
@@ -144,7 +184,6 @@ def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, 
 
             second_spatial_sum[timej,timek]= np.trace(firstSpatialSumPhaseMom1[lowerbnd:upperbnd,lowerbnd:upperbnd])    
        
-    ### result is ntxntxnt array with [t3,t2,t1] where t3 is the tie up time, t2 is extended source time 
-    ### and t1 is source time in the milc code. Also when using point sources any momentum is possible and the tie up 
+    ### result is ntxntxnt array with [t2,t1] where t2 is the tie up time and t1 is source time in the milc code.
     
     return second_spatial_sum*3

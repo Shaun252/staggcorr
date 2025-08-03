@@ -1,7 +1,33 @@
+"""Gauge field reunitarization utilities.
+
+This module provides functions to restore gauge field matrices to SU(N) 
+group elements after numerical operations that may break unitarity.
+"""
+
 from math import sqrt
 import numpy as np
 
 def reuniterise(gMatrix):
+    """Reunitarize an SU(3) gauge field matrix.
+    
+    Restores a 3×3 complex matrix to SU(3) form using Gram-Schmidt
+    orthogonalization and determinant normalization.
+    
+    Parameters
+    ----------
+    gMatrix : numpy.ndarray
+        3×3 complex matrix to be reunitarized
+        
+    Returns
+    -------
+    numpy.ndarray
+        Reunitarized SU(3) matrix
+        
+    Notes
+    -----
+    Uses Gram-Schmidt process to orthogonalize rows, then fixes
+    determinant to 1 to ensure SU(3) group membership.
+    """
     
     g00r = gMatrix[0,0].real
     g00i = gMatrix[0,0].imag

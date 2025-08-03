@@ -161,15 +161,15 @@ def tieup4pt_fullProp(prop1, prop2, prop3, prop4, mom1, mom2, mom3, mom4, phase1
             coordi_shift, bdphase = add_lattice_antiperiodic_txyz(coordi, shift, vol=vol)
             coord_iso_dict4[link_dirs].append(lattice_coord_iso_reverse(coordi_shift, vol=vol))
             shift_bd_dict4[link_dirs].append(bdphase)
-            
-        ###Idea here is that the 3 point is D(n1+d1|n2)e^{ip2n2} D(n2+d2|n3)e^{ip3n3} D(n3+d3|n4)e^{ip4n4} D(n4+d4|n1)e^{ip1n1} where prop1 = D(n1+d1|n2). This means we are free to multiply the whole propagator elementwise by the momentum corresponding to the second index but not first as this has a delta shift di
         
+        ###Idea here is that the 3 point is D(n1+d1|n2)e^{ip2n2} D(n2+d2|n3)e^{ip3n3} D(n3+d3|n4)e^{ip4n4} D(n4+d4|n1)e^{ip1n1} where prop1 = D(n1+d1|n2). This means we are free to multiply the whole propagator elementwise by the momentum corresponding to the second index but not first as this has a delta shift di 
     if Nlinks4 == 0:
         Prop4PhaseMom1 = prop4 * phase_mom_arr1
-    else: 
+    else:
         Prop4PhaseMom1 = np.zeros((matrix_dim, matrix_dim), dtype=np.complex128)
+
         for link_dirs in sym4:
-            Prop4PhaseMom1 += (shift_bd_dict4[link_dirs] * prop4[coord_iso_dict3[link_dirs],:].T).T
+            Prop4PhaseMom1 += (shift_bd_dict4[link_dirs] * prop4[coord_iso_dict4[link_dirs],:].T).T
         Prop4PhaseMom1 /= no_terms4
         Prop4PhaseMom1 *= phase_mom_arr1
         
