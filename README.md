@@ -1,19 +1,11 @@
 # StagCorr
 
-A Python package for computing staggered fermion correlation functions in lattice QCD simulations.
+A Python package for computing staggered fermion correlation functions (wick contractions).
 
 ## Overview
 
-StagCorr provides tools for calculating n-point correlation functions using the staggered fermion formalism in lattice Quantum Chromodynamics (QCD). It supports both free field theory calculations and full QCD simulations with gauge field interactions, with results validated against MILC reference data.
+StagCorr provides tools for calculating n-point wick contractions using the staggered fermion formalism in lattice Quantum Chromodynamics (QCD). It currently supports both free field theory (HISQ & Naive) and full QCD with gauge field interactions (Naive), with results validated against MILC reference data.
 
-## Features
-
-- **N-point correlation functions**: 2-point, 3-point, and 4-point correlators
-- **Staggered fermion formalism**: Complete implementation of staggered fermion phases and operators  
-- **Gauge field support**: HISQ smearing and gauge field handling
-- **Flexible lattice geometries**: Support for various lattice sizes and boundary conditions
-- **Free field theory**: Analytical calculations for comparison and testing
-- **MILC validation**: Results validated against MILC lattice QCD code
 
 ## Installation
 
@@ -106,7 +98,7 @@ Each operator is specified as `[spin, taste, mass, naik_epsilon, momentum, symme
 - **Mass**: Quark mass in lattice units (0.1 = light, 1.0 = heavy)
 - **Naik epsilon**: Naik improvement parameter (0 = no improvement, typically 0)
 - **Momentum**: `[px, py, pz]` in lattice units (2π/L)
-- **Symmetric shift**: Shift parameter (typically 0)
+- **Symmetric shift**: If the propagator has shifts, determines if its shifted only in the negative direction (-1), positive direction (+1) or symmetric (0).
 
 ## Output Format
 
@@ -168,12 +160,6 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 
 MIT License
 
-## Citation
-
-If you use this package in your research, please cite:
-```
-Lahert, S. (2024). StagCorr: Staggered fermion correlation function solver for lattice QCD.
-```
 
 ## Contact
 
