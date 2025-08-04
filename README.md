@@ -51,7 +51,7 @@ print(Ct[:, 0])  # Print correlation function values
 
 ```python
 # Vector meson correlator: GX⊗G1 × GX⊗G1
-# Mass = 1.0 (heavy quark), Naik epsilon = 0 (no improvement)
+# Mass = 1.0, Naik epsilon = 0 (no improvement)
 Ct = corr.generate_npt(
     spinTasteMassNaikMomSymShift1=["GX", "G1", 1.0, 0, [0,0,0], 0],
     spinTasteMassNaikMomSymShift2=["GX", "G1", 1.0, 0, [0,0,0], 0],
@@ -64,7 +64,7 @@ Ct = corr.generate_npt(
 
 ```python
 # Two-pion to vector transition: π(+p) + π(-p) → ρ(0)
-# Mass = 0.1 (light quark), Naik epsilon = 0 (no improvement)
+# Mass = 0.1, Naik epsilon = 0 (no improvement)
 Ct = corr.generate_npt(
     spinTasteMassNaikMomSymShift1=["G5", "G5", 0.1, 0, [0,0,1], 0],   # π⁺
     spinTasteMassNaikMomSymShift2=["G5", "G5", 0.1, 0, [0,0,-1], 0],  # π⁻ 
@@ -78,7 +78,7 @@ Ct = corr.generate_npt(
 
 ```python
 # Two-pion scattering: π(+p) + π(-p) → π(+p) + π(-p)
-# Mass = 0.1 (light quark), Naik epsilon = 0 (no improvement)
+# Mass = 0.1, Naik epsilon = 0 (no improvement)
 Ct = corr.generate_npt(
     spinTasteMassNaikMomSymShift1=["G5", "G5", 0.1, 0, [0,0,1], 0],   # incoming π⁺
     spinTasteMassNaikMomSymShift2=["G5", "G5", 0.1, 0, [0,0,-1], 0],  # incoming π⁻
