@@ -1,6 +1,6 @@
 # StagCorr
 
-A Python package for computing staggered fermion correlation functions (wick contractions).
+A Python package for computing staggered fermion correlation functions (~wick contractions).
 
 ## Overview
 
