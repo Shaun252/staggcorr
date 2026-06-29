@@ -259,8 +259,15 @@ def phase_shift_operator(spin, taste):
 ##########################################################################################################################################
 #### mom character
 
+def mom_flip(mom):
+    
+    return [-i for i in mom]
+    
 
-def mom_character(mom_three_vec, group_element, N):
+def mom_character(mom_three_vec, group_element, N, dag):
+    
+    if dag == True:
+        mom_three_vec = mom_flip(mom_three_vec)
     
     pdotx = np.dot(mom_three_vec, group_element)
     

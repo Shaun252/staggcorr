@@ -1,170 +1,6 @@
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:51:42 2025 UTC"
-lattice_size:                 6,6,6,6
-antiquark_type:               staggered
-antiquark_source_type:        vector_field
-antiquark_source_subset:      full
-antiquark_source_origin:      [ 0, 0, 0, 0 ]
-antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
-antiquark_source_ncolor:      3
-antiquark_source_mom:         [ 0, 0, 0 ]
-antiquark_source_label:       RW
-antiquark_sink_label:         d
-antiquark_mass:               "1"
-antiquark_epsilon:            0
-quark_type:                   staggered
-quark_source_type:            vector_field/spin_taste
-quark_source_subset:          full
-quark_source_origin:          [ 0, 0, 0, 0 ]
-quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
-quark_source_ncolor:          3
-quark_source_mom:             [ 0, 0, 0 ]
-quark_source_label:           G5-G5
-quark_source_ops:             [
-{ operation:                  spin_taste,
-  spin_taste:                 G5-G5
-}
-]
-quark_sink_label:             d
-quark_mass:                   "1"
-quark_epsilon:                0
-...
----
-correlator:                   P5-P5
-momentum:                     0,0,0
-spin_taste_sink:              G5-G5
-correlator_key:               P5-P5_RW_G5-G5_d_d_m1_m1_0,0,0
-...
-0	1.888318e-01	0.000000e+00
-1	1.921320e-02	0.000000e+00
-2	2.179571e-03	0.000000e+00
-3	7.481405e-04	0.000000e+00
-4	2.179571e-03	0.000000e+00
-5	1.921320e-02	0.000000e+00
----
-JobID:                        220421
-date:                         "Sun Aug  3 02:51:42 2025 UTC"
-lattice_size:                 6,6,6,6
-antiquark_type:               staggered
-antiquark_source_type:        point
-antiquark_source_subset:      full
-antiquark_source_origin:      [ 0, 0, 0, 0 ]
-antiquark_source_label:       pt_src
-antiquark_sink_label:         d
-antiquark_mass:               "1"
-antiquark_epsilon:            0
-quark_type:                   staggered
-quark_source_type:            point/spin_taste
-quark_source_subset:          full
-quark_source_origin:          [ 0, 0, 0, 0 ]
-quark_source_label:           Gt_src
-quark_source_ops:             [
-{ operation:                  spin_taste,
-  spin_taste:                 G5-G5
-}
-]
-quark_sink_label:             d
-quark_mass:                   "1"
-quark_epsilon:                0
-...
----
-correlator:                   P5-P5
-momentum:                     0,0,0
-spin_taste_sink:              G5-G5
-correlator_key:               P5-P5_pt_src_Gt_src_d_d_m1_m1_0,0,0
-...
-0	1.885994e-01	0.000000e+00
-1	1.904623e-02	0.000000e+00
-2	2.145019e-03	0.000000e+00
-3	7.103049e-04	0.000000e+00
-4	2.145019e-03	0.000000e+00
-5	1.904623e-02	0.000000e+00
----
-JobID:                        220421
-date:                         "Sun Aug  3 02:51:47 2025 UTC"
-lattice_size:                 6,6,6,6
-antiquark_type:               staggered
-antiquark_source_type:        vector_field
-antiquark_source_subset:      full
-antiquark_source_origin:      [ 0, 0, 0, 0 ]
-antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
-antiquark_source_ncolor:      3
-antiquark_source_mom:         [ 0, 0, 0 ]
-antiquark_source_label:       RW
-antiquark_sink_label:         d
-antiquark_mass:               "1"
-antiquark_epsilon:            0
-quark_type:                   staggered
-quark_source_type:            vector_field/spin_taste
-quark_source_subset:          full
-quark_source_origin:          [ 0, 0, 0, 0 ]
-quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
-quark_source_ncolor:          3
-quark_source_mom:             [ 0, 0, 0 ]
-quark_source_label:           GX-G1
-quark_source_ops:             [
-{ operation:                  spin_taste,
-  spin_taste:                 GX-G1
-}
-]
-quark_sink_label:             d
-quark_mass:                   "1"
-quark_epsilon:                0
-...
----
-correlator:                   P5-P5
-momentum:                     0,0,0
-spin_taste_sink:              GX-G1
-correlator_key:               P5-P5_RW_GX-G1_d_d_m1_m1_0,0,0
-...
-0	8.312736e-02	-1.666326e-04
-1	1.173150e-02	-3.655084e-20
-2	1.275390e-03	2.878924e-07
-3	6.155703e-04	-6.757006e-21
-4	1.275390e-03	2.878924e-07
-5	1.173150e-02	-3.948470e-20
----
-JobID:                        220421
-date:                         "Sun Aug  3 02:51:47 2025 UTC"
-lattice_size:                 6,6,6,6
-antiquark_type:               staggered
-antiquark_source_type:        point
-antiquark_source_subset:      full
-antiquark_source_origin:      [ 0, 0, 0, 0 ]
-antiquark_source_label:       pt_src
-antiquark_sink_label:         d
-antiquark_mass:               "1"
-antiquark_epsilon:            0
-quark_type:                   staggered
-quark_source_type:            point/spin_taste
-quark_source_subset:          full
-quark_source_origin:          [ 0, 0, 0, 0 ]
-quark_source_label:           Gt_src
-quark_source_ops:             [
-{ operation:                  spin_taste,
-  spin_taste:                 GX-G1
-}
-]
-quark_sink_label:             d
-quark_mass:                   "1"
-quark_epsilon:                0
-...
----
-correlator:                   P5-P5
-momentum:                     0,0,0
-spin_taste_sink:              GX-G1
-correlator_key:               P5-P5_pt_src_Gt_src_d_d_m1_m1_0,0,0
-...
-0	8.420306e-02	0.000000e+00
-1	1.162087e-02	0.000000e+00
-2	1.242047e-03	0.000000e+00
-3	5.763016e-04	0.000000e+00
-4	1.242047e-03	0.000000e+00
-5	1.162087e-02	0.000000e+00
----
-JobID:                        220421
-date:                         "Sun Aug  3 02:51:52 2025 UTC"
+date:                         "Fri Apr 10 21:04:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -208,7 +44,7 @@ correlator_key:               P5-P5_RW_GX-G1_d_d_m1_m1_0,0,0
 5	1.142534e-02	1.212207e-19
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:51:52 2025 UTC"
+date:                         "Fri Apr 10 21:04:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -246,7 +82,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_d_m1_m1_0,0,0
 5	1.162087e-02	0.000000e+00
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:51:55 2025 UTC"
+date:                         "Fri Apr 10 21:04:07 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -305,7 +141,7 @@ correlator_key:               P5-P5_RW_G5-G5_d_x_m0.1_m0.1_0,0,0
 5	2.655498e-05	1.743027e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:51:55 2025 UTC"
+date:                         "Fri Apr 10 21:04:07 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -358,7 +194,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-5.072346e-19	1.931340e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:08 2025 UTC"
+date:                         "Fri Apr 10 21:04:21 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -417,7 +253,7 @@ correlator_key:               P5-P5_RW_G5-G5_d_x_m0.1_m0.1_0,0,0
 5	8.103218e-05	1.795919e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:08 2025 UTC"
+date:                         "Fri Apr 10 21:04:21 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -470,7 +306,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	8.131516e-19	1.931340e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:20 2025 UTC"
+date:                         "Fri Apr 10 21:04:33 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -529,7 +365,7 @@ correlator_key:               P5-P5_RW_G5-G5_d_x_m0.1_m0.1_0,0,0
 5	1.617831e-05	1.578983e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:20 2025 UTC"
+date:                         "Fri Apr 10 21:04:33 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -582,7 +418,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	5.175176e-20	1.776219e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:33 2025 UTC"
+date:                         "Fri Apr 10 21:04:45 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -641,7 +477,7 @@ correlator_key:               P5-P5_RW_G5-G5_d_x_m0.1_m0.1_0,0,0
 5	5.978434e-05	1.693445e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:33 2025 UTC"
+date:                         "Fri Apr 10 21:04:45 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -694,7 +530,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	1.677125e-19	1.776219e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:42 2025 UTC"
+date:                         "Fri Apr 10 21:04:55 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -753,7 +589,7 @@ correlator_key:               P5-P5_RW_G5-G5_d_x_m0.1_m0.1_0,0,0
 5	1.331292e-05	2.019604e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:42 2025 UTC"
+date:                         "Fri Apr 10 21:04:55 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -806,7 +642,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	7.925631e-20	2.110781e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:53 2025 UTC"
+date:                         "Fri Apr 10 21:05:06 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -865,7 +701,7 @@ correlator_key:               P5-P5_RW_G5-G5_d_x_m0.1_m0.1_0,0,0
 5	3.691706e-05	1.994719e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:52:53 2025 UTC"
+date:                         "Fri Apr 10 21:05:06 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -918,7 +754,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	7.623297e-21	2.110781e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:03 2025 UTC"
+date:                         "Fri Apr 10 21:05:16 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -977,7 +813,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	2.655498e-05	1.743027e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:03 2025 UTC"
+date:                         "Fri Apr 10 21:05:16 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1030,7 +866,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-7.308513e-19	1.931340e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:16 2025 UTC"
+date:                         "Fri Apr 10 21:05:29 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1089,7 +925,7 @@ correlator_key:               P5-P5_RW_G5-GX_d_x_m0.1_m0.1_0,0,0
 5	-1.975621e-05	-1.702943e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:16 2025 UTC"
+date:                         "Fri Apr 10 21:05:29 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1142,7 +978,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	3.006618e-19	-1.788844e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:29 2025 UTC"
+date:                         "Fri Apr 10 21:05:42 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1201,7 +1037,7 @@ correlator_key:               P5-P5_RW_G5-GX_d_x_m0.1_m0.1_0,0,0
 5	-3.214078e-05	-1.658809e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:29 2025 UTC"
+date:                         "Fri Apr 10 21:05:42 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1254,7 +1090,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	3.227196e-19	-1.788844e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:36 2025 UTC"
+date:                         "Fri Apr 10 21:05:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1313,7 +1149,7 @@ correlator_key:               P5-P5_RW_G5-GZ_d_x_m0.1_m0.1_0,0,0
 5	-3.429154e-05	-1.466142e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:36 2025 UTC"
+date:                         "Fri Apr 10 21:05:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1366,7 +1202,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	2.278346e-19	-1.652602e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:48 2025 UTC"
+date:                         "Fri Apr 10 21:06:01 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1425,7 +1261,7 @@ correlator_key:               P5-P5_RW_G5-GZ_d_x_m0.1_m0.1_0,0,0
 5	-4.653209e-05	-1.536894e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:48 2025 UTC"
+date:                         "Fri Apr 10 21:06:01 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1478,7 +1314,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	2.490277e-19	-1.652602e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:57 2025 UTC"
+date:                         "Fri Apr 10 21:06:09 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1537,7 +1373,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	-1.331292e-05	-2.019604e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:53:57 2025 UTC"
+date:                         "Fri Apr 10 21:06:09 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1590,7 +1426,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	1.253021e-19	-2.110781e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:05 2025 UTC"
+date:                         "Fri Apr 10 21:06:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1649,7 +1485,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	-1.617831e-05	-1.578983e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:05 2025 UTC"
+date:                         "Fri Apr 10 21:06:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1702,7 +1538,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-4.989852e-19	-1.776219e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:16 2025 UTC"
+date:                         "Fri Apr 10 21:06:29 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1761,7 +1597,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	-1.975621e-05	-1.702943e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:16 2025 UTC"
+date:                         "Fri Apr 10 21:06:29 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1814,7 +1650,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	2.015589e-19	-1.788844e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:27 2025 UTC"
+date:                         "Fri Apr 10 21:06:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1873,7 +1709,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	-3.214078e-05	-1.658809e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:27 2025 UTC"
+date:                         "Fri Apr 10 21:06:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -1926,7 +1762,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-6.009699e-19	-1.788844e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:34 2025 UTC"
+date:                         "Fri Apr 10 21:06:48 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -1985,7 +1821,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	-3.429154e-05	-1.466142e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:34 2025 UTC"
+date:                         "Fri Apr 10 21:06:48 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2038,7 +1874,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-8.726161e-20	-1.652602e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:49 2025 UTC"
+date:                         "Fri Apr 10 21:07:02 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2097,7 +1933,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	-4.653209e-05	-1.536894e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:49 2025 UTC"
+date:                         "Fri Apr 10 21:07:02 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2150,7 +1986,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-7.521653e-19	-1.652602e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:57 2025 UTC"
+date:                         "Fri Apr 10 21:07:11 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2209,7 +2045,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	1.665516e-05	1.471777e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:54:57 2025 UTC"
+date:                         "Fri Apr 10 21:07:11 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2262,7 +2098,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-4.900036e-19	1.551175e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:07 2025 UTC"
+date:                         "Fri Apr 10 21:07:20 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2321,7 +2157,7 @@ correlator_key:               P5-P5_RW_G5T-G_d_x_m0.1_m0.1_0,0,0
 5	2.282250e-05	1.447097e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:07 2025 UTC"
+date:                         "Fri Apr 10 21:07:20 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2374,7 +2210,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_d_x_m0.1_m0.1_0,0,0
 5	-8.893846e-21	1.551175e-04
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2445,7 +2281,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	4.712681e-05	-5.233089e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2516,7 +2352,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	9.968974e-05	2.080721e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2587,7 +2423,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-1.560360e-05	5.180260e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2658,7 +2494,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-1.374943e-04	-4.477673e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -2729,7 +2565,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-3.150645e-04	3.470098e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2794,7 +2630,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	4.720001e-05	-5.661886e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2859,7 +2695,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.088367e-04	6.213781e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2924,7 +2760,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.519359e-05	9.075495e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -2989,7 +2825,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.459280e-04	-7.746597e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:10 2025 UTC"
+date:                         "Fri Apr 10 21:07:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -3054,7 +2890,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.453929e-06	1.312828e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3125,7 +2961,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	6.077542e-05	5.418904e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3196,7 +3032,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	5.718375e-05	2.109739e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3267,7 +3103,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-2.077370e-05	-5.418148e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3338,7 +3174,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-1.067549e-04	-3.181864e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3409,7 +3245,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-3.973950e-04	-3.254299e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -3474,7 +3310,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	6.451835e-05	8.588120e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -3539,7 +3375,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	5.423817e-05	1.014454e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -3604,7 +3440,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.177686e-05	-9.129096e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -3669,7 +3505,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.062840e-04	-9.975798e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:55:40 2025 UTC"
+date:                         "Fri Apr 10 21:07:54 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -3734,7 +3570,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-4.200920e-04	-3.930762e-19
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3805,7 +3641,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-3.309755e-05	4.562273e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3876,7 +3712,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-9.550893e-05	-2.199933e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -3947,7 +3783,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	1.231521e-05	-4.957088e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4018,7 +3854,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	1.194694e-04	1.314862e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4089,7 +3925,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	2.054198e-04	-3.023322e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4154,7 +3990,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-3.296237e-05	3.539671e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4219,7 +4055,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.045260e-04	1.464110e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4284,7 +4120,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.183196e-05	-3.543642e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4349,7 +4185,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.275743e-04	-6.344992e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:11 2025 UTC"
+date:                         "Fri Apr 10 21:08:24 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4414,7 +4250,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	9.429849e-07	-7.663369e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4485,7 +4321,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	3.309755e-05	-4.562273e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4556,7 +4392,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	9.550893e-05	1.559560e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4627,7 +4463,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-1.231521e-05	4.957088e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4698,7 +4534,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-1.194694e-04	-2.007782e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -4769,7 +4605,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-2.054198e-04	3.023322e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4834,7 +4670,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	3.296237e-05	-4.377440e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4899,7 +4735,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.045260e-04	7.563740e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -4964,7 +4800,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.183196e-05	8.397538e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5029,7 +4865,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.275743e-04	-7.218185e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:56:36 2025 UTC"
+date:                         "Fri Apr 10 21:08:50 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5094,7 +4930,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-9.429849e-07	5.529243e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5165,7 +5001,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-2.959023e-05	4.394569e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5236,7 +5072,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-9.446372e-05	-2.376398e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5307,7 +5143,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	1.149311e-05	-4.901295e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5378,7 +5214,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	1.149631e-04	3.926447e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5449,7 +5285,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	1.780086e-04	-2.911629e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5514,7 +5350,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.940296e-05	1.210992e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5579,7 +5415,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.034484e-04	-8.883920e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5644,7 +5480,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.099155e-05	-2.187231e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5709,7 +5545,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.229859e-04	-6.996139e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:04 2025 UTC"
+date:                         "Fri Apr 10 21:09:18 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -5774,7 +5610,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	8.152488e-07	-3.933703e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5845,7 +5681,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-4.362311e-05	-4.968224e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5916,7 +5752,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-5.244139e-05	1.089378e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -5987,7 +5823,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	1.673412e-05	5.215706e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6058,7 +5894,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	8.499223e-05	-7.866426e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6129,7 +5965,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	2.586401e-04	2.912637e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6194,7 +6030,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-4.718117e-05	-1.941558e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6259,7 +6095,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-4.943944e-05	-1.522674e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6324,7 +6160,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.766064e-05	2.654257e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6389,7 +6225,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	8.427081e-05	1.427383e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:26 2025 UTC"
+date:                         "Fri Apr 10 21:09:40 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6454,7 +6290,1367 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.296668e-06	7.678074e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-1.947285e-04	9.005499e-21
+1	-2.575325e-04	2.151854e-05
+2	-1.947285e-04	9.419263e-21
+3	-4.693418e-06	7.653070e-07
+4	-3.115225e-05	2.909715e-21
+5	-4.693418e-06	7.653070e-07
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         2
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-4.693418e-06	-7.653070e-07
+1	-1.296904e-04	3.039123e-22
+2	3.532475e-05	5.475024e-06
+3	1.871972e-05	-9.861052e-22
+4	1.275110e-06	5.094665e-07
+5	-1.029149e-05	-2.479826e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         3
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-3.115225e-05	-5.038719e-20
+1	-8.140833e-06	1.852821e-06
+2	9.956876e-05	-9.817151e-20
+3	-1.007927e-05	3.787353e-06
+4	-7.911148e-05	3.150315e-20
+5	1.275110e-06	-5.094665e-07
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         4
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-4.693418e-06	-7.653070e-07
+1	7.670515e-05	-5.722766e-20
+2	-4.693418e-06	-7.653070e-07
+3	1.871972e-05	-1.613685e-20
+4	-1.007927e-05	-3.787353e-06
+5	1.871972e-05	7.403947e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-1.947285e-04	1.032569e-20
+1	3.531013e-05	-3.037474e-06
+2	9.012746e-05	-3.018731e-20
+3	-4.693418e-06	7.653070e-07
+4	9.956876e-05	-2.530315e-20
+5	3.532475e-05	-5.475024e-06
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-1.927615e-04	-1.242061e-19
+1	-2.519096e-04	-6.525413e-19
+2	-1.927615e-04	-1.386604e-19
+3	-4.560526e-06	5.317944e-20
+4	-3.076644e-05	-8.147398e-20
+5	-4.560526e-06	6.472730e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         2
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-4.560526e-06	1.999670e-20
+1	-1.342276e-04	1.512376e-19
+2	3.439983e-05	4.574900e-20
+3	1.930325e-05	5.509187e-20
+4	1.221806e-06	-6.207545e-21
+5	-1.090516e-05	-2.001705e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         3
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-3.076644e-05	-1.000215e-19
+1	-7.885227e-06	-8.394986e-20
+2	9.354564e-05	1.143097e-19
+3	-9.658108e-06	4.547467e-19
+4	-7.181123e-05	-2.353763e-19
+5	1.221806e-06	-5.971226e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         4
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-4.560526e-06	1.681320e-20
+1	8.142146e-05	-7.734221e-20
+2	-4.560526e-06	-1.308147e-20
+3	1.930325e-05	5.507745e-21
+4	-9.658108e-06	-2.759008e-20
+5	1.930325e-05	6.885786e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:03 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [1, 0, 1],
+  t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-1.927615e-04	-2.912783e-18
+1	3.439983e-05	-3.045983e-18
+2	9.354564e-05	-2.115902e-18
+3	-4.560526e-06	-3.930415e-19
+4	9.354564e-05	-1.062695e-18
+5	3.439983e-05	-3.408522e-19
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-5.863318e-05	8.391900e-22
+1	5.882311e-05	-1.058421e-05
+2	-5.863318e-05	-8.525230e-21
+3	6.432191e-07	-3.118067e-07
+4	-1.289397e-05	6.907632e-21
+5	6.432191e-07	-3.118067e-07
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         2
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	6.432191e-07	3.118067e-07
+1	4.539842e-06	-2.590117e-21
+2	-1.812996e-06	-2.781844e-06
+3	1.073062e-06	-4.240067e-23
+4	2.233989e-07	-3.128925e-07
+5	4.773378e-07	1.252474e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         3
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-1.289397e-05	2.298116e-20
+1	2.927196e-07	-8.819801e-07
+2	6.866877e-05	2.039153e-22
+3	-2.714129e-06	-2.564715e-06
+4	-7.127294e-05	1.483288e-20
+5	2.233989e-07	3.128925e-07
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         4
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	6.432191e-07	3.118067e-07
+1	-6.759495e-06	5.127294e-22
+2	6.432191e-07	3.118067e-07
+3	1.073062e-06	-1.908030e-21
+4	-2.714129e-06	2.564715e-06
+5	1.073062e-06	-1.692350e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 1, 0, 1 ]
+quark_source_label:           G5-G5
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_1,0,1
+...
+0	-5.863318e-05	-8.296217e-20
+1	-1.017592e-05	1.048992e-06
+2	6.188749e-06	-6.239123e-20
+3	6.432191e-07	-3.118067e-07
+4	6.866877e-05	6.697050e-20
+5	-1.812996e-06	2.781844e-06
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-5.172946e-05	-5.868350e-20
+1	4.807947e-05	1.470984e-19
+2	-5.172946e-05	-6.714060e-20
+3	5.055473e-07	-4.755130e-20
+4	-1.122983e-05	-3.700475e-20
+5	5.055473e-07	-5.563120e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         2
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	5.055473e-07	-1.011072e-20
+1	4.703715e-06	-6.820518e-21
+2	-4.980898e-07	4.077889e-20
+3	9.414486e-07	-4.548046e-21
+4	2.449540e-07	1.047551e-20
+5	5.882950e-07	1.148706e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         3
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-1.122983e-05	-1.677026e-20
+1	7.598055e-08	4.693402e-20
+2	6.127617e-05	5.193371e-20
+3	-2.918596e-06	-4.941184e-19
+4	-6.358382e-05	-1.915750e-19
+5	2.449540e-07	6.081406e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         4
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	5.055473e-07	-7.157689e-21
+1	-7.363252e-06	-1.234691e-20
+2	5.055473e-07	-8.887081e-21
+3	9.414486e-07	-9.166505e-21
+4	-2.918596e-06	-4.055175e-20
+5	9.414486e-07	-7.871451e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:30 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [-1, 0, -1],
+  t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-G5X
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [-1, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-G5X,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     1,0,1
+spin_taste_sink:              G5-G5X
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_1,0,1
+...
+0	-5.172946e-05	-1.417139e-18
+1	-9.072206e-06	4.413533e-17
+2	4.188217e-06	6.390288e-18
+3	5.055473e-07	1.642916e-18
+4	6.127617e-05	1.893039e-18
+5	-4.980898e-07	3.251463e-18
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6525,7 +7721,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-8.350285e-06	1.308272e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6596,7 +7792,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	-2.388008e-05	-1.630421e-19
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6667,7 +7863,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	2.858547e-06	-1.295065e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6738,7 +7934,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	3.094217e-05	-3.372831e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -6809,7 +8005,7 @@ correlator_key:               P5-P5_RW_G5-G5_x_x_m0.1_m0.1_0,0,1
 5	5.630390e-05	-8.675245e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6848,7 +8044,7 @@ quark_sink_ops:               [
 },
 { operation:                  ext_src_ks,
   spin_taste_extend:          G5-G5Z,
-  mom:                        [0, 0, -1],
+  mom:                        [0, 0, 0],
   t0:                         1
 },
 { operation:                  ks_inverse,
@@ -6866,15 +8062,15 @@ momentum:                     0,0,1
 spin_taste_sink:              G5-G5Z
 correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 ...
-0	4.954856e-05	1.111731e-19
-1	1.748992e-04	3.317325e-19
-2	4.954856e-05	8.893846e-20
-3	4.603349e-06	9.608530e-21
-4	1.150874e-05	3.684593e-20
-5	4.603349e-06	1.090389e-20
+0	-3.401352e-04	-3.246069e-19
+1	-3.877758e-04	-6.471067e-19
+2	-3.401352e-04	-3.314126e-19
+3	-8.608751e-06	-1.228363e-20
+4	-1.101179e-04	-1.187964e-19
+5	-8.608751e-06	-1.200074e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6913,7 +8109,7 @@ quark_sink_ops:               [
 },
 { operation:                  ext_src_ks,
   spin_taste_extend:          G5-G5Z,
-  mom:                        [0, 0, -1],
+  mom:                        [0, 0, 0],
   t0:                         1
 },
 { operation:                  ks_inverse,
@@ -6931,15 +8127,15 @@ momentum:                     0,0,1
 spin_taste_sink:              G5-G5Z
 correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 ...
-0	4.603349e-06	1.595089e-20
-1	-1.448257e-05	-1.235808e-20
-2	-3.305240e-05	1.136294e-21
-3	1.788688e-06	-2.434393e-21
-4	-2.014945e-06	5.212575e-21
-5	-6.400336e-06	-5.424650e-21
+0	-8.608751e-06	2.826719e-20
+1	-1.904559e-04	-2.078391e-19
+2	5.737435e-05	-5.030935e-20
+3	3.329075e-05	2.061617e-20
+4	2.844918e-06	1.429764e-20
+5	-2.625569e-05	-1.237421e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -6978,7 +8174,7 @@ quark_sink_ops:               [
 },
 { operation:                  ext_src_ks,
   spin_taste_extend:          G5-G5Z,
-  mom:                        [0, 0, -1],
+  mom:                        [0, 0, 0],
   t0:                         1
 },
 { operation:                  ks_inverse,
@@ -6996,15 +8192,15 @@ momentum:                     0,0,1
 spin_taste_sink:              G5-G5Z
 correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 ...
-0	1.150874e-05	-1.731124e-20
-1	9.734292e-06	5.603321e-21
-2	-6.578021e-05	-9.846758e-20
-3	1.319323e-05	3.956322e-20
-4	7.315741e-05	1.542129e-19
-5	-2.014945e-06	-9.029090e-21
+0	-1.101179e-04	-2.433384e-19
+1	-1.602320e-05	-6.123453e-20
+2	2.106311e-04	3.020731e-19
+3	-1.832859e-05	-8.111168e-20
+4	-1.737598e-04	-1.921342e-19
+5	2.844918e-06	1.657174e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7043,7 +8239,7 @@ quark_sink_ops:               [
 },
 { operation:                  ext_src_ks,
   spin_taste_extend:          G5-G5Z,
-  mom:                        [0, 0, -1],
+  mom:                        [0, 0, 0],
   t0:                         1
 },
 { operation:                  ks_inverse,
@@ -7061,15 +8257,15 @@ momentum:                     0,0,1
 spin_taste_sink:              G5-G5Z
 correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 ...
-0	4.603349e-06	8.029807e-21
-1	3.687517e-05	1.232830e-20
-2	4.603349e-06	1.482628e-20
-3	1.788688e-06	-6.907372e-21
-4	1.319323e-05	-2.237509e-20
-5	1.788688e-06	-4.906008e-21
+0	-8.608751e-06	-4.550604e-21
+1	1.443161e-04	9.448719e-20
+2	-8.608751e-06	-1.154470e-21
+3	3.329075e-05	2.549228e-20
+4	-1.832859e-05	2.269086e-20
+5	3.329075e-05	2.183327e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:57:49 2025 UTC"
+date:                         "Fri Apr 10 21:10:57 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7082,6 +8278,11 @@ antiquark_sink_ops:           [
   spin_taste_extend:          G5-G5Z,
   mom:                        [0, 0, 1],
   t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
 }
 ]
 antiquark_mass:               "0.1"
@@ -7103,7 +8304,7 @@ quark_sink_ops:               [
 },
 { operation:                  ext_src_ks,
   spin_taste_extend:          G5-G5Z,
-  mom:                        [0, 0, -1],
+  mom:                        [0, 0, 0],
   t0:                         1
 },
 { operation:                  ks_inverse,
@@ -7121,15 +8322,15 @@ momentum:                     0,0,1
 spin_taste_sink:              G5-G5Z
 correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 ...
-0	0.000000e+00	0.000000e+00
-1	0.000000e+00	0.000000e+00
-2	0.000000e+00	0.000000e+00
-3	0.000000e+00	0.000000e+00
-4	0.000000e+00	0.000000e+00
-5	-2.452443e-07	3.294017e-22
+0	-1.574700e-06	-1.337517e-21
+1	2.656220e-07	2.851475e-22
+2	9.751442e-07	7.793880e-22
+3	-3.985533e-08	-9.551638e-23
+4	9.751442e-07	7.940934e-22
+5	2.656220e-07	3.109740e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7200,7 +8401,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-3.699772e-05	8.125153e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7271,7 +8472,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	9.968974e-05	-7.031903e-19
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7342,7 +8543,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	8.340649e-06	-6.226985e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7413,7 +8614,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-1.374943e-04	-2.380443e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7484,7 +8685,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	2.704273e-04	-4.289776e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7549,7 +8750,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-3.717331e-05	5.514979e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7614,7 +8815,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.088367e-04	2.483527e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7679,7 +8880,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	8.362239e-06	-4.868785e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7744,7 +8945,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.459280e-04	-2.106452e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:07 2025 UTC"
+date:                         "Fri Apr 10 21:11:15 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -7809,7 +9010,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.255447e-06	-1.044453e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7880,7 +9081,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	4.821686e-06	-1.122693e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -7951,7 +9152,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	2.277199e-05	-4.235165e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8022,7 +9223,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	-1.969797e-06	1.232925e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8093,7 +9294,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	-2.615802e-05	8.050998e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8164,7 +9365,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	-2.896935e-05	7.450850e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8229,7 +9430,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	4.867414e-06	-4.059802e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8294,7 +9495,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	2.503497e-05	5.017678e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8359,7 +9560,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.920760e-06	-5.593395e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8424,7 +9625,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.826316e-05	-1.318617e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:33 2025 UTC"
+date:                         "Fri Apr 10 21:11:43 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8489,7 +9690,687 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.349591e-07	-7.697375e-23
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 0, 0, 1 ]
+quark_source_label:           G5-GX
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
+...
+0	1.090590e-04	-2.915989e-20
+1	-8.335994e-05	2.673092e-05
+2	1.090590e-04	-2.763837e-20
+3	-2.431479e-06	1.435502e-06
+4	4.654188e-05	-2.305812e-21
+5	-2.431479e-06	1.435502e-06
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         2
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 0, 0, 1 ]
+quark_source_label:           G5-GX
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
+...
+0	-2.431479e-06	-1.435502e-06
+1	-3.310038e-05	-7.121351e-21
+2	1.050786e-05	8.117844e-06
+3	4.816409e-06	-1.903863e-21
+4	2.939042e-07	1.361952e-06
+5	-4.970099e-06	-1.666616e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         3
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 0, 0, 1 ]
+quark_source_label:           G5-GX
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
+...
+0	4.654188e-05	-5.284937e-20
+1	-3.890564e-06	3.994423e-06
+2	-1.450646e-04	-5.250036e-20
+3	-3.977220e-07	7.481480e-06
+4	1.629911e-04	7.121351e-21
+5	2.939042e-07	-1.361952e-06
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         4
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 0, 0, 1 ]
+quark_source_label:           G5-GX
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
+...
+0	-2.431479e-06	-1.435502e-06
+1	2.920179e-05	1.184278e-21
+2	-2.431479e-06	-1.435502e-06
+3	4.816409e-06	-1.339175e-21
+4	-3.977220e-07	-7.481480e-06
+5	4.816409e-06	2.427377e-21
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        vector_field
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_file:        /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+antiquark_source_ncolor:      3
+antiquark_source_mom:         [ 0, 0, 0 ]
+antiquark_source_label:       RW
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            vector_field/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_file:            /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+quark_source_ncolor:          3
+quark_source_mom:             [ 0, 0, 1 ]
+quark_source_label:           G5-GX
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
+...
+0	1.090590e-04	3.858706e-21
+1	1.738891e-05	-4.582156e-06
+2	-2.111433e-05	-1.435250e-20
+3	-2.431479e-06	1.435502e-06
+4	-1.450646e-04	3.090102e-21
+5	1.050786e-05	-8.117844e-06
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
+...
+0	9.329811e-05	9.211483e-20
+1	-9.611647e-05	2.187727e-19
+2	9.329811e-05	1.226080e-19
+3	-2.867917e-06	1.684967e-20
+4	4.094950e-05	2.159934e-20
+5	-2.867917e-06	1.466095e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         2
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
+...
+0	-2.867917e-06	-8.536036e-21
+1	-3.303487e-05	2.203609e-20
+2	1.290655e-05	1.735481e-20
+3	4.872205e-06	-1.684967e-20
+4	4.975908e-07	2.476325e-21
+5	-4.664898e-06	2.704881e-22
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         3
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
+...
+0	4.094950e-05	5.129843e-20
+1	-4.814067e-06	6.020220e-20
+2	-1.280108e-04	-1.537365e-19
+3	-1.494692e-06	7.664986e-20
+4	1.447905e-04	1.461132e-19
+5	4.975908e-07	-1.233823e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         4
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
+...
+0	-2.867917e-06	-9.620470e-21
+1	2.740408e-05	-2.084495e-21
+2	-2.867917e-06	-9.259080e-21
+3	4.872205e-06	-1.408523e-20
+4	-1.494692e-06	-2.618704e-20
+5	4.872205e-06	5.409761e-22
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:08 2026 UTC"
+lattice_size:                 6,6,6,6
+antiquark_type:               staggered
+antiquark_source_type:        point
+antiquark_source_subset:      full
+antiquark_source_origin:      [ 0, 0, 0, 0 ]
+antiquark_source_label:       pt_src
+antiquark_sink_label:         x
+antiquark_sink_ops:           [
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, -1],
+  t0:                         5
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+antiquark_mass:               "0.1"
+antiquark_epsilon:            0
+quark_type:                   staggered
+quark_source_type:            point/spin_taste
+quark_source_subset:          full
+quark_source_origin:          [ 0, 0, 0, 0 ]
+quark_source_label:           Gt_src
+quark_source_ops:             [
+{ operation:                  spin_taste,
+  spin_taste:                 G5-GXT
+}
+]
+quark_sink_label:             x
+quark_sink_ops:               [
+{ operation:                  momentum,
+  mom:                        [0, 0, -1]
+},
+{ operation:                  ext_src_ks,
+  spin_taste_extend:          G5-GXT,
+  mom:                        [0, 0, 0],
+  t0:                         1
+},
+{ operation:                  ks_inverse,
+  mass:                       0.1,
+  eps_naik:                   0,
+  momentum_twist:             [0.000000, 0.000000, 0.000000],
+}
+]
+quark_mass:                   "0.1"
+quark_epsilon:                0
+...
+---
+correlator:                   P5-P5
+momentum:                     0,0,1
+spin_taste_sink:              G5-GXT
+correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
+...
+0	9.329811e-05	1.010087e-19
+1	1.965891e-05	-5.708539e-20
+2	-1.727615e-05	-1.286431e-20
+3	-2.867917e-06	1.811029e-20
+4	-1.280108e-04	-1.397604e-19
+5	1.290655e-05	-8.816422e-20
+---
+JobID:                        220421
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8560,7 +10441,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	-5.311124e-06	2.319617e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8631,7 +10512,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	-4.409984e-05	9.535003e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8702,7 +10583,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	2.407705e-06	-2.490706e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8773,7 +10654,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	4.848601e-05	-1.204669e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -8844,7 +10725,7 @@ correlator_key:               P5-P5_RW_G5-GX_x_x_m0.1_m0.1_0,0,1
 5	3.393678e-05	-1.539146e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8909,7 +10790,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-5.981544e-06	1.452198e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -8974,7 +10855,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-4.885343e-05	-1.183695e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9039,7 +10920,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	2.506388e-06	-4.176187e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9104,7 +10985,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	5.328753e-05	1.486940e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:58:58 2025 UTC"
+date:                         "Fri Apr 10 21:12:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9169,7 +11050,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.728742e-07	-2.817010e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9240,7 +11121,7 @@ correlator_key:               P5-P5_RW_G5-GZ_x_x_m0.1_m0.1_0,0,1
 5	1.785833e-05	-3.542624e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9311,7 +11192,7 @@ correlator_key:               P5-P5_RW_G5-GZ_x_x_m0.1_m0.1_0,0,1
 5	9.047762e-05	7.654668e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9382,7 +11263,7 @@ correlator_key:               P5-P5_RW_G5-GZ_x_x_m0.1_m0.1_0,0,1
 5	-8.251966e-06	4.629946e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9453,7 +11334,7 @@ correlator_key:               P5-P5_RW_G5-GZ_x_x_m0.1_m0.1_0,0,1
 5	-9.911773e-05	8.505817e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9524,7 +11405,7 @@ correlator_key:               P5-P5_RW_G5-GZ_x_x_m0.1_m0.1_0,0,1
 5	-9.346659e-05	2.303764e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9589,7 +11470,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.659177e-05	1.347974e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9654,7 +11535,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	9.896611e-05	1.125627e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9719,7 +11600,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-7.569566e-06	7.985602e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9784,7 +11665,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.059200e-04	-2.900479e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:27 2025 UTC"
+date:                         "Fri Apr 10 21:13:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -9849,7 +11730,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-3.983567e-07	-1.970528e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9920,7 +11801,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	5.875597e-06	-2.044688e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -9991,7 +11872,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-2.388008e-05	2.686192e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10062,7 +11943,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-1.061984e-06	1.561773e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10133,7 +12014,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	3.094217e-05	-1.438900e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10204,7 +12085,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-4.549168e-05	1.079324e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -10269,7 +12150,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	6.154646e-06	2.778334e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -10334,7 +12215,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.625569e-05	-6.898686e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -10399,7 +12280,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.154381e-06	-1.184688e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -10464,7 +12345,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	3.329075e-05	1.421199e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 02:59:57 2025 UTC"
+date:                         "Fri Apr 10 21:13:36 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -10529,7 +12410,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.174833e-07	-3.878558e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10600,7 +12481,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	1.973836e-05	-7.192219e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10671,7 +12552,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-9.446372e-05	-1.289765e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10742,7 +12623,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-4.300967e-06	5.940774e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10813,7 +12694,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	1.149631e-04	-1.314418e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -10884,7 +12765,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-1.354175e-04	3.664259e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -10949,7 +12830,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.966149e-05	-1.889942e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11014,7 +12895,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.034484e-04	6.442083e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11079,7 +12960,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-4.233272e-06	2.007567e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11144,7 +13025,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	1.229859e-04	-1.858045e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:10 2025 UTC"
+date:                         "Fri Apr 10 21:13:49 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11209,7 +13090,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-6.264417e-07	4.242517e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -11280,7 +13161,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-2.406963e-06	1.840979e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -11351,7 +13232,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	2.277199e-05	-5.509636e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -11422,7 +13303,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	1.895050e-07	-1.495561e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -11493,7 +13374,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-2.615802e-05	4.128713e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -11564,7 +13445,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	1.860115e-05	-9.414253e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11629,7 +13510,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.478001e-06	7.325512e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11694,7 +13575,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	2.503497e-05	4.786150e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11759,7 +13640,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	2.472692e-07	3.217319e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11824,7 +13705,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.826316e-05	-1.101584e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:00:36 2025 UTC"
+date:                         "Fri Apr 10 21:14:14 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -11889,7 +13770,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	8.897462e-08	-2.379523e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -11960,7 +13841,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-8.222210e-06	6.339836e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12031,7 +13912,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	9.047762e-05	2.504629e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12102,7 +13983,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	1.121724e-06	-5.667180e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12173,7 +14054,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-9.911773e-05	-2.169144e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12244,7 +14125,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	5.240087e-05	-3.061568e-05
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -12309,7 +14190,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-7.087300e-06	-4.784413e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -12374,7 +14255,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	9.896611e-05	2.079036e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -12439,7 +14320,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	8.766988e-07	-5.399835e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -12504,7 +14385,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.059200e-04	-1.889209e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:03 2025 UTC"
+date:                         "Fri Apr 10 21:14:41 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -12569,7 +14450,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	2.170973e-07	4.542141e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12640,7 +14521,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-1.352709e-07	-1.597998e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12711,7 +14592,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-2.179982e-05	-2.326400e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12782,7 +14663,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	5.222007e-07	1.421612e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12853,7 +14734,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	2.254263e-05	9.387778e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        vector_field
@@ -12924,7 +14805,7 @@ correlator_key:               P5-P5_RW_G5T-G_x_x_m0.1_m0.1_0,0,1
 5	-1.132028e-06	7.724498e-06
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -12989,7 +14870,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-1.787686e-07	-4.685151e-21
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -13054,7 +14935,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	-2.401326e-05	-1.029095e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -13119,7 +15000,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	4.940440e-07	7.940934e-22
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point
@@ -13184,7 +15065,7 @@ correlator_key:               P5-P5_pt_src_Gt_src_x_x_m0.1_m0.1_0,0,1
 5	2.448857e-05	2.044306e-20
 ---
 JobID:                        220421
-date:                         "Sun Aug  3 03:01:26 2025 UTC"
+date:                         "Fri Apr 10 21:15:05 2026 UTC"
 lattice_size:                 6,6,6,6
 antiquark_type:               staggered
 antiquark_source_type:        point

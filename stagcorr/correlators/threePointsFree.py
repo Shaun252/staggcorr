@@ -7,9 +7,8 @@ from collections import defaultdict
 ########################################################################################################################################
 #### 3pt function
 
-def tieup3pt_fullProp(prop1, prop2, prop3, mom1, mom2, mom3, phase1, phase2, phase3, shift1, shift2, shift3, sym1, sym2, sym3, vol, SUN=3):
+def tieup3pt_fullProp(prop1, prop2, prop3, mom1, mom2, mom3, phase1, phase2, phase3, shift1, shift2, shift3, dag1, dag2, dag3, vol, SUN=3):
     ##Assuming all spatial dimensions are equal
-    
     N=vol[-1]
     matrix_dim = prop1.shape[0]
     mat_range = range(matrix_dim)
@@ -47,23 +46,14 @@ def tieup3pt_fullProp(prop1, prop2, prop3, mom1, mom2, mom3, phase1, phase2, pha
     shift_bd_dict2 = defaultdict(list)
     shift_bd_dict3 = defaultdict(list)
                          
-    if sym1 == 0:
-        sym1 = LinkSymList[Nlinks1-1]
-        no_terms1 = 2 ** Nlinks1
-    else:
-        no_terms1 = len(sym1)
+    sym1 = LinkSymList[Nlinks1]
+    no_terms1 = 2 ** Nlinks1
         
-    if sym2 == 0:
-        sym2 = LinkSymList[Nlinks2-1]
-        no_terms2 = 2 ** Nlinks2
-    else:
-        no_terms2 = len(sym2)
+    sym2 = LinkSymList[Nlinks2]
+    no_terms2 = 2 ** Nlinks2
         
-    if sym3 == 0:
-        sym3 = LinkSymList[Nlinks3-1]
-        no_terms3 = 2 ** Nlinks3
-    else:
-        no_terms3 = len(sym3)
+    sym3 = LinkSymList[Nlinks3]
+    no_terms3 = 2 ** Nlinks3
     
     shift_list1 = []
     for link_dirs in sym1:
@@ -98,9 +88,9 @@ def tieup3pt_fullProp(prop1, prop2, prop3, mom1, mom2, mom3, phase1, phase2, pha
         stagPhase2 = phase_func2(coordi)
         stagPhase3 = phase_func3(coordi)
        
-        momPhase1 = mom_character(mom1, coordi[1:], N)
-        momPhase2 = mom_character(mom2, coordi[1:], N)
-        momPhase3 = mom_character(mom3, coordi[1:], N)
+        momPhase1 = mom_character(mom1, coordi[1:], N, dag1)
+        momPhase2 = mom_character(mom2, coordi[1:], N, dag2)
+        momPhase3 = mom_character(mom3, coordi[1:], N, dag3)
         
         phase_mom_arr1[i] = stagPhase1 * momPhase1
         phase_mom_arr2[i] = stagPhase2 * momPhase2

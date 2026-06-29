@@ -8,7 +8,7 @@ from collections import defaultdict
 #### 2pt function
 
 
-def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, sym1, sym2, vol, SUN = 3):
+def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, dag1, dag2, vol, SUN = 3):
     ##Assuming all spatial dimensions are equal
     
     N=vol[-1]
@@ -50,17 +50,12 @@ def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, 
     shift_bd_dict1 = defaultdict(list)
     shift_bd_dict2 = defaultdict(list)
                          
-    if sym1 == 0:
-        sym1 = LinkSymList[Nlinks1-1]
-        no_terms1 = 2 ** Nlinks1
-    else:
-        no_terms1 = len(sym1)
-        
-    if sym2 == 0:
-        sym2 = LinkSymList[Nlinks2-1]
-        no_terms2 = 2 ** Nlinks2
-    else:
-        no_terms2 = len(sym2)
+    
+    sym1 = LinkSymList[Nlinks1]
+    no_terms1 = 2 ** Nlinks1
+
+    sym2 = LinkSymList[Nlinks2]
+    no_terms2 = 2 ** Nlinks2
     
     shift_list1 = []
     for link_dirs in sym1:
@@ -87,8 +82,8 @@ def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, 
         stagPhase1 = phase_func1(phys_coord)
         stagPhase2 = phase_func2(phys_coord)
        
-        momPhase1 = mom_character(mom1, phys_coord[1:], N)
-        momPhase2 = mom_character(mom2, phys_coord[1:], N)
+        momPhase1 = mom_character(mom1, phys_coord[1:], N, dag1)
+        momPhase2 = mom_character(mom2, phys_coord[1:], N, dag2)
         
         phase_mom_arr1[i] = stagPhase1 * momPhase1
         phase_mom_arr2[i] = stagPhase2 * momPhase2
@@ -115,37 +110,27 @@ def tieup2pt_fullProp(prop1, prop2, mom1, mom2, phase1, phase2, shift1, shift2, 
             shift_bd_dict2[link_dirs].append(bdphase)
             
             
-    if Nlinks2 == 0:
-        Prop2PhaseMom1 = prop2 * phase_mom_arr1
-    else: 
-        Prop2PhaseMom1 = np.zeros((matrix_dim, matrix_dim), dtype=np.complex128)
-        for link_dirs in sym2:
-            Prop2PhaseMom1 += (shift_bd_dict2[link_dirs] * prop2[coord_iso_dict2[link_dirs],:].T).T
-        Prop2PhaseMom1 /= no_terms2
-        Prop2PhaseMom1 *= phase_mom_arr1
-        
-    del prop2
-    del phase_mom_arr1
+    prop1 = apply_shift_bd_and_phase(prop=prop1, coord_iso_dict_l=coord_iso_dict2, coord_iso_dict_r=coord_iso_dict1,
+                                     bd_dict_l = shift_bd_dict2, bd_dict_r = shift_bd_dict1,
+                                     no_terms_l = no_terms2, no_terms_r = no_terms1,
+                                     dag_l = dag2, dag_r = dag1,
+                                     phase_l = phase_mom_arr2, phase_r = phase_mom_arr1,
+                                     matrix_dim=matrix_dim)
     
     
-    if Nlinks1 ==0:
-        Prop1PhaseMom2 = prop1 * phase_mom_arr2     
-    else:
-        Prop1PhaseMom2 = np.zeros((matrix_dim, matrix_dim), dtype=np.complex128)
-        for link_dirs in sym1: 
-            Prop1PhaseMom2 += (shift_bd_dict1[link_dirs] * prop1[coord_iso_dict1[link_dirs],:].T).T
-        Prop1PhaseMom2 /= no_terms1  
-        Prop1PhaseMom2 *= phase_mom_arr2
-        
-    del prop1
-    del phase_mom_arr2
+    prop2 = apply_shift_bd_and_phase(prop=prop2, coord_iso_dict_l=coord_iso_dict1, coord_iso_dict_r=coord_iso_dict2,
+                                     bd_dict_l = shift_bd_dict1, bd_dict_r = shift_bd_dict2,
+                                     no_terms_l = no_terms1, no_terms_r = no_terms2,
+                                     dag_l = dag1, dag_r = dag2,
+                                     phase_l = phase_mom_arr1, phase_r = phase_mom_arr2,
+                                     matrix_dim=matrix_dim)
         
         
     for timej in temporal_range:
         lowerbnd = timej * spatial_dimxSUN
         upperbnd = (timej+1) * spatial_dimxSUN
 
-        firstSpatialSumPhaseMom1 = Prop1PhaseMom2[:,lowerbnd:upperbnd] @ Prop2PhaseMom1[lowerbnd:upperbnd,:]
+        firstSpatialSumPhaseMom1 = prop1[:,lowerbnd:upperbnd] @ prop2[lowerbnd:upperbnd,:]
         
         for timek in temporal_range:
             lowerbnd = timek * spatial_dimxSUN

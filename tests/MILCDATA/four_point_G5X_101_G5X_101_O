@@ -1,0 +1,586 @@
+#== Geometry ==
+prompt 0
+nx 6
+ny 6
+nz 6
+nt 6
+iseed 50160
+job_id 220421
+
+#== Gauge ==
+fresh
+u0 1
+no_gauge_fix
+forget
+staple_weight 1
+ape_iter 1
+coordinate_origin 0 0 0 0
+time_bc antiperiodic
+
+#== Eigen ==
+max_number_of_eigenpairs 0
+
+#== PBP Masses ==
+
+number_of_pbp_masses 0
+
+#== Base Sources ==
+
+number_of_base_sources 4
+
+#== source 0: RandomColorWallSource ==
+random_color_wall
+subset full
+t0 0
+ncolor 3
+momentum 0 0 0
+source_label RW
+save_serial_scidac_ks_source /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+
+#== source 1: RandomColorWallSource ==
+vector_field
+subset full
+origin 0 0 0 0
+load_source_serial /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+ncolor 3
+momentum 0 0 0
+source_label RW
+forget_source
+
+#== source 2: VectorFieldSource ==
+vector_field
+subset full
+origin 0 0 0 0
+load_source_serial /home/slahert/setup_milc/test_milc_ks_spectrum/sources/3pt_source
+ncolor 3
+momentum 1 0 1
+source_label RW
+forget_source
+
+#== source 3: VectorFieldSource ==
+point
+subset full
+origin 0 0 0 0
+source_label pt_src
+forget_source
+
+
+#== Modified Sources ==
+
+number_of_modified_sources 2
+
+#== source 4: VectorFieldSource ==
+source 2
+spin_taste
+spin_taste G5-G5X
+op_label G5-G5X
+forget_source
+
+#== source 5: VectorFieldSource ==
+source 3
+spin_taste
+spin_taste G5-G5X
+op_label G5-G5X
+forget_source
+
+
+#== KSsolveSets ==
+
+number_of_sets 5
+
+#== KSsolveSet ==
+max_cg_iterations 10
+max_cg_restarts 1
+check sourceonly
+momentum_twist 0 0 0
+precision 2
+source 0
+number_of_propagators 1
+
+#== propagator 0: KSsolveElement ==
+mass 0.0
+naik_term_epsilon 0
+error_for_propagator 1e-11
+rel_error_for_propagator 0.0
+fresh_ksprop
+forget_ksprop
+
+
+#== KsolveSet ==
+max_cg_iterations 5000
+max_cg_restarts 10
+check yes
+momentum_twist 0 0 0
+precision 2
+source 1
+number_of_propagators 1
+
+#== propagator 1: KSsolveElement ==
+mass 0.1
+naik_term_epsilon 0
+error_for_propagator 1e-15
+rel_error_for_propagator 0.0
+fresh_ksprop
+forget_ksprop
+
+#== KsolveSet ==
+max_cg_iterations 5000
+max_cg_restarts 10
+check yes
+momentum_twist 0 0 0
+precision 2
+source 4
+number_of_propagators 1
+
+#== propagator 2: KSsolveElement ==
+mass 0.1
+naik_term_epsilon 0
+error_for_propagator 1e-15
+rel_error_for_propagator 0.0
+fresh_ksprop
+forget_ksprop
+
+#== KsolveSet ==
+max_cg_iterations 5000
+max_cg_restarts 10
+check yes
+momentum_twist 0 0 0
+precision 2
+source 3
+number_of_propagators 1
+
+#== propagator 3: KSsolveElement ==
+mass 0.1
+naik_term_epsilon 0
+error_for_propagator 1e-15
+rel_error_for_propagator 0.0
+fresh_ksprop
+forget_ksprop
+
+#== KsolveSet ==
+max_cg_iterations 5000
+max_cg_restarts 10
+check yes
+momentum_twist 0 0 0
+precision 2
+source 5
+number_of_propagators 1
+
+#== propagator 4: KSsolveElement ==
+mass 0.1
+naik_term_epsilon 0
+error_for_propagator 1e-15
+rel_error_for_propagator 0.0
+fresh_ksprop
+forget_ksprop
+
+
+#== Quarks ==
+
+number_of_quarks 26
+
+#== quark 0: Momentum ==
+propagator 2
+momentum
+momentum -1 0 -1
+op_label m
+forget_ksprop
+
+#== quark 1: KSExtSrcSink ==
+quark 0
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 0 0 0
+t0 1
+op_label x
+forget_ksprop
+
+#== quark 2: KSInverseSink ==
+quark 1
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+#== quark 3: Momentum ==
+propagator 4
+momentum
+momentum -1 0 -1
+op_label m
+forget_ksprop
+
+#== quark 4: KSExtSrcSink ==
+quark 3
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 0 0 0
+t0 1
+op_label x
+forget_ksprop
+
+#== quark 5: KSInverseSink ==
+quark 4
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+####################
+
+#== quark 6: KSExtSrcSink ==
+propagator 1
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 1
+op_label x
+forget_ksprop
+
+#== quark 7: KSInverseSink ==
+quark 6
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+#== quark 8: KSExtSrcSink ==
+propagator 3
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 1
+op_label x
+forget_ksprop
+
+#== quark 9: KSInverseSink ==
+quark 8
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+####################
+
+#== quark 10: KSExtSrcSink ==
+propagator 1
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 2
+op_label x
+forget_ksprop
+
+#== quark 11: KSInverseSink ==
+quark 10
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+#== quark 12: KSExtSrcSink ==
+propagator 3
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 2
+op_label x
+forget_ksprop
+
+#== quark 13: KSInverseSink ==
+quark 12
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+####################
+
+#== quark 14: KSExtSrcSink ==
+propagator 1
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 3
+op_label x
+forget_ksprop
+
+#== quark 15: KSInverseSink ==
+quark 14
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+#== quark 16: KSExtSrcSink ==
+propagator 3
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 3
+op_label x
+forget_ksprop
+
+#== quark 17: KSInverseSink ==
+quark 16
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+####################
+
+#== quark 18: KSExtSrcSink ==
+propagator 1
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 4
+op_label x
+forget_ksprop
+
+#== quark 19: KSInverseSink ==
+quark 18
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+#== quark 20: KSExtSrcSink ==
+propagator 3
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 4
+op_label x
+forget_ksprop
+
+#== quark 21: KSInverseSink ==
+quark 20
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+####################
+
+#== quark 22: KSExtSrcSink ==
+propagator 1
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 5
+op_label x
+forget_ksprop
+
+#== quark 23: KSInverseSink ==
+quark 22
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+#== quark 24: KSExtSrcSink ==
+propagator 3
+ext_src_ks
+spin_taste_extend G5-G5X
+momentum 1 0 1
+t0 5
+op_label x
+forget_ksprop
+
+#== quark 25: KSInverseSink ==
+quark 24
+ks_inverse
+mass 0.1
+naik_term_epsilon 0
+u0 1
+max_cg_iterations 4000
+max_cg_restarts 5
+deflate no
+error_for_propagator 1e-12
+rel_error_for_propagator 0.0
+precision 2
+momentum_twist 0 0 0
+op_label x
+forget_ksprop
+
+####################
+
+#== Mesons ==
+
+number_of_mesons 10
+
+#== MesonSpectrum ==
+
+pair 7 2
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 216 G5-G5X 1 0 1 EO EO EO
+
+pair 11 2
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 216 G5-G5X 1 0 1 EO EO EO
+
+pair 15 2
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 216 G5-G5X 1 0 1 EO EO EO
+
+pair 19 2
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 216 G5-G5X 1 0 1 EO EO EO
+
+pair 23 2
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 216 G5-G5X 1 0 1 EO EO EO
+
+pair 9 5
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 1 G5-G5X 1 0 1 EO EO EO
+
+pair 13 5
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 1 G5-G5X 1 0 1 EO EO EO
+
+pair 17 5
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 1 G5-G5X 1 0 1 EO EO EO
+
+pair 21 5
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 1 G5-G5X 1 0 1 EO EO EO
+
+pair 25 5
+spectrum_request meson
+save_corr_fnal corr/MILC2PIRUNS
+r_offset 0 0 0 0
+number_of_correlators 1
+correlator P5-P5 1,0,1 1 / 1 G5-G5X 1 0 1 EO EO EO
+
+#== Baryons ==
+
+number_of_baryons 0

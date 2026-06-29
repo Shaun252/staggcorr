@@ -8,10 +8,10 @@ functions in staggered fermion lattice QCD.
 import stagcorr.correlators.npoint as npoint
 import stagcorr.correlators.npointFree as npointFree
 
-def generate_npt(spinTasteMassNaikMomSymShift1, prop1=None, volume=(4,4,4,4), 
-                 spinTasteMassNaikMomSymShift2=None, prop2=None, 
-                 spinTasteMassNaikMomSymShift3=None, prop3=None, 
-                 spinTasteMassNaikMomSymShift4=None, prop4=None, 
+def generate_npt(spinTasteMassNaikMomDag1, prop1=None, volume=(4,4,4,4), 
+                 spinTasteMassNaikMomDag2=None, prop2=None, 
+                 spinTasteMassNaikMomDag3=None, prop3=None, 
+                 spinTasteMassNaikMomDag4=None, prop4=None, 
                  antiperiodic=True, gField=None):
     """
     Generate n-point staggered fermion correlation functions.
@@ -22,14 +22,14 @@ def generate_npt(spinTasteMassNaikMomSymShift1, prop1=None, volume=(4,4,4,4),
     
     Parameters
     ----------
-    spinTasteMassNaikMomSymShift1 : list
-        First operator specification: [spin, taste, mass, naik_eps, momentum, sym_shift]
+    spinTasteMassNaikMomDag1 : list
+        First operator specification: [spin, taste, mass, naik_eps, momentum, dagger]
         - spin (str): Dirac structure ('G5', 'GX', 'GY', 'GZ', 'GT', etc.)
         - taste (str): Taste structure ('G5', 'G1', 'GX', 'GY', 'GZ', etc.)
         - mass (float): Bare quark mass in lattice units
         - naik_eps (float): Naik improvement parameter (typically 0)
         - momentum (list): [px, py, pz] in lattice units (2π/L)
-        - sym_shift (int): Symmetric shift parameter (typically 0)
+        - dagger (bool): Whether the operator to be contracted has a dagger applied
     
     prop1 : numpy.ndarray, optional
         Pre-computed propagator for operator 1. If None, computed automatically.
@@ -37,20 +37,20 @@ def generate_npt(spinTasteMassNaikMomSymShift1, prop1=None, volume=(4,4,4,4),
     volume : tuple, default=(4,4,4,4)
         Lattice dimensions as (T, X, Y, Z)
     
-    spinTasteMassNaikMomSymShift2 : list, optional
+    spinTasteMassNaikMomDag2 : list, optional
         Second operator specification (same format as first). 
         If None, creates 2-point function with operator 1.
     
     prop2 : numpy.ndarray, optional
         Pre-computed propagator for operator 2.
     
-    spinTasteMassNaikMomSymShift3 : list, optional
+    spinTasteMassNaikMomDag3 : list, optional
         Third operator specification for 3-point or 4-point functions.
     
     prop3 : numpy.ndarray, optional
         Pre-computed propagator for operator 3.
     
-    spinTasteMassNaikMomSymShift4 : list, optional  
+    spinTasteMassNaikMomDag4 : list, optional  
         Fourth operator specification for 4-point functions.
     
     prop4 : numpy.ndarray, optional
@@ -79,17 +79,17 @@ def generate_npt(spinTasteMassNaikMomSymShift1, prop1=None, volume=(4,4,4,4),
     >>> # Pion 2-point function
     >>> vol = (6, 6, 6, 6)
     >>> Ct = corr.generate_npt(
-    ...     spinTasteMassNaikMomSymShift1=["G5", "G5", 0.1, 0, [0,0,0], 0],
-    ...     spinTasteMassNaikMomSymShift2=["G5", "G5", 0.1, 0, [0,0,0], 0],
+    ...     spinTasteMassNaikMomDag1=["G5", "G5", 0.1, 0, [0,0,0], True],
+    ...     spinTasteMassNaikMomDag2=["G5", "G5", 0.1, 0, [0,0,0], False],
     ...     volume=vol
     ... )
     >>> print(Ct.shape)  # (6, 6)
     >>>
     >>> # Two-pion to vector 3-point function  
     >>> Ct = corr.generate_npt(
-    ...     spinTasteMassNaikMomSymShift1=["G5", "G5", 0.1, 0, [0,0,1], 0],   # π⁺
-    ...     spinTasteMassNaikMomSymShift2=["G5", "G5", 0.1, 0, [0,0,-1], 0],  # π⁻
-    ...     spinTasteMassNaikMomSymShift3=["GZ", "G1", 0.1, 0, [0,0,0], 0],   # ρ
+    ...     spinTasteMassNaikMomDag1=["G5", "G5", 0.1, 0, [0,0,1], True],   # π⁺
+    ...     spinTasteMassNaikMomDag2=["G5", "G5", 0.1, 0, [0,0,-1], True],  # π⁻
+    ...     spinTasteMassNaikMomDag3=["GZ", "G1", 0.1, 0, [0,0,0], False],   # ρ
     ...     volume=vol
     ... )
     >>> print(Ct.shape)  # (6, 6, 6)
@@ -101,11 +101,12 @@ def generate_npt(spinTasteMassNaikMomSymShift1, prop1=None, volume=(4,4,4,4),
     - Free field calculations use analytical methods for speed
     - Gauge field calculations use HISQ staggered action
     """
-    
+
     if gField == None:
-        corrArr = npointFree.npt(spinTasteMassNaikMomSymShift1=spinTasteMassNaikMomSymShift1, prop1 =prop1, volume=volume, spinTasteMassNaikMomSymShift2=spinTasteMassNaikMomSymShift2, prop2 = prop2, spinTasteMassNaikMomSymShift3=spinTasteMassNaikMomSymShift3, prop3 = prop3, spinTasteMassNaikMomSymShift4 = spinTasteMassNaikMomSymShift4, prop4 = prop4, antiperiodic=antiperiodic, gField = gField)
+
+        corrArr = npointFree.npt(spinTasteMassNaikMomDag1=spinTasteMassNaikMomDag1, prop1 =prop1, volume=volume, spinTasteMassNaikMomDag2=spinTasteMassNaikMomDag2, prop2 = prop2, spinTasteMassNaikMomDag3=spinTasteMassNaikMomDag3, prop3 = prop3, spinTasteMassNaikMomDag4 = spinTasteMassNaikMomDag4, prop4 = prop4, antiperiodic=antiperiodic, gField = gField)
         
     else:
-        corrArr =  npoint.npt(spinTasteMassNaikMomSymShift1=spinTasteMassNaikMomSymShift1, prop1 =prop1, volume=volume, spinTasteMassNaikMomSymShift2=spinTasteMassNaikMomSymShift2, prop2 = prop2, spinTasteMassNaikMomSymShift3=spinTasteMassNaikMomSymShift3, prop3 = prop3, spinTasteMassNaikMomSymShift4 = spinTasteMassNaikMomSymShift4, prop4 = prop4, antiperiodic=antiperiodic, gField = gField)
+        corrArr =  npoint.npt(spinTasteMassNaikMomDag1=spinTasteMassNaikMomDag1, prop1 =prop1, volume=volume, spinTasteMassNaikMomDag2=spinTasteMassNaikMomDag2, prop2 = prop2, spinTasteMassNaikMomDag3=spinTasteMassNaikMomDag3, prop3 = prop3, spinTasteMassNaikMomDag4 = spinTasteMassNaikMomDag4, prop4 = prop4, antiperiodic=antiperiodic, gField = gField)
         
     return corrArr
