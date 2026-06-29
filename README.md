@@ -37,8 +37,8 @@ vol = (6, 6, 6, 6)  # (T,X,Y,Z) dimensions
 
 # Generate a pion two-point correlation function
 Ct = corr.generate_npt(
-    spinTasteMassNaikMomSymShift1=["G5", "G5", 1, 0, [0,0,0], 0],
-    spinTasteMassNaikMomSymShift2=["G5", "G5", 1, 0, [0,0,0], 0],
+    spinTasteMassNaikMomDag1=["G5", "G5", 1, 0, [0,0,0], True],
+    spinTasteMassNaikMomDag2=["G5", "G5", 1, 0, [0,0,0], False],
     volume=vol
 )
 
@@ -53,8 +53,8 @@ print(Ct[:, 0])  # Print correlation function values
 # Vector meson correlator: GX⊗G1 × GX⊗G1
 # Mass = 1.0, Naik epsilon = 0 (no improvement)
 Ct = corr.generate_npt(
-    spinTasteMassNaikMomSymShift1=["GX", "G1", 1.0, 0, [0,0,0], 0],
-    spinTasteMassNaikMomSymShift2=["GX", "G1", 1.0, 0, [0,0,0], 0],
+    spinTasteMassNaikMomDag1=["GX", "G1", 1.0, 0, [0,0,0], True],
+    spinTasteMassNaikMomDag2=["GX", "G1", 1.0, 0, [0,0,0], False],
     volume=vol
 )
 # Returns: nt×nt tensor indexed as Ct[t2, t1]
@@ -66,9 +66,9 @@ Ct = corr.generate_npt(
 # Two-pion to vector transition: π(+p) + π(-p) → ρ(0)
 # Mass = 0.1, Naik epsilon = 0 (no improvement)
 Ct = corr.generate_npt(
-    spinTasteMassNaikMomSymShift1=["G5", "G5", 0.1, 0, [0,0,1], 0],   # π⁺
-    spinTasteMassNaikMomSymShift2=["G5", "G5", 0.1, 0, [0,0,-1], 0],  # π⁻ 
-    spinTasteMassNaikMomSymShift3=["GZ", "G1", 0.1, 0, [0,0,0], 0],   # ρ
+    spinTasteMassNaikMomDag1=["G5", "G5", 0.1, 0, [0,0,1],  True],   # π⁺
+    spinTasteMassNaikMomDag2=["G5", "G5", 0.1, 0, [0,0,-1], True],   # π⁻
+    spinTasteMassNaikMomDag3=["GZ", "G1", 0.1, 0, [0,0,0],  False],  # ρ
     volume=vol
 )
 # Returns: nt×nt×nt tensor indexed as Ct[t3, t2, t1]
@@ -80,10 +80,10 @@ Ct = corr.generate_npt(
 # Two-pion scattering: π(+p) + π(-p) → π(+p) + π(-p)
 # Mass = 0.1, Naik epsilon = 0 (no improvement)
 Ct = corr.generate_npt(
-    spinTasteMassNaikMomSymShift1=["G5", "G5", 0.1, 0, [0,0,1], 0],   # incoming π⁺
-    spinTasteMassNaikMomSymShift2=["G5", "G5", 0.1, 0, [0,0,-1], 0],  # incoming π⁻
-    spinTasteMassNaikMomSymShift3=["G5", "G5", 0.1, 0, [0,0,1], 0],   # outgoing π⁺
-    spinTasteMassNaikMomSymShift4=["G5", "G5", 0.1, 0, [0,0,-1], 0],  # outgoing π⁻
+    spinTasteMassNaikMomDag1=["G5", "G5", 0.1, 0, [0,0,1],  True],   # incoming π⁺
+    spinTasteMassNaikMomDag2=["G5", "G5", 0.1, 0, [0,0,-1], True],   # incoming π⁻
+    spinTasteMassNaikMomDag3=["G5", "G5", 0.1, 0, [0,0,1],  False],  # outgoing π⁺
+    spinTasteMassNaikMomDag4=["G5", "G5", 0.1, 0, [0,0,-1], False],  # outgoing π⁻
     volume=vol
 )
 # Returns: nt×nt×nt×nt tensor indexed as Ct[t4, t3, t2, t1]
@@ -91,14 +91,14 @@ Ct = corr.generate_npt(
 
 ## Parameter Format
 
-Each operator is specified as `[spin, taste, mass, naik_epsilon, momentum, symmetric_shift]`:
+Each operator is specified as `[spin, taste, mass, naik_epsilon, momentum, dag]`:
 
 - **Spin**: Dirac structure (`"G5"`, `"GX"`, `"GY"`, `"GZ"`, `"GT"`, `"G5X"`, etc.)
 - **Taste**: Taste structure (`"G5"`, `"G1"`, `"GX"`, `"GY"`, `"GZ"`, etc.)
 - **Mass**: Quark mass in lattice units (0.1 = light, 1.0 = heavy)
 - **Naik epsilon**: Naik improvement parameter (0 = no improvement, typically 0)
 - **Momentum**: `[px, py, pz]` in lattice units (2π/L)
-- **Symmetric shift**: If the propagator has shifts, determines if its shifted only in the negative direction (-1), positive direction (+1) or symmetric (0).
+- **dag**: `True` = daggered operator (source/creation); `False` = non-daggered (sink/annihilation)
 
 ## Output Format
 
